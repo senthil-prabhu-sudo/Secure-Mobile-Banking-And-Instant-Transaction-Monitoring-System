@@ -1,0 +1,4 @@
+com\bank\secure\backend\monitoring\TransactionMonitoringServiceTest.class
+com\bank\secure\backend\account\AccountServiceTest.class
+com\bank\secure\backend\auth\AuthServiceTest.class
+com\bank\secure\backend\transaction\TransactionServiceTest.class

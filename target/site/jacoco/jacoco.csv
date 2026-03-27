@@ -1,0 +1,19 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.account.dto,AccountSummaryResponse,0,15,0,0,0,1,0,1,0,1
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.monitoring,TransactionMonitoringController,14,0,0,0,4,0,2,0,2,0
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.monitoring,TransactionMonitoringService,2,49,1,9,0,7,1,6,0,2
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.transaction,TransactionService,1,54,1,1,0,11,1,2,0,2
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.transaction,TransactionController,12,0,0,0,4,0,2,0,2,0
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.monitoring.dto,RiskAssessmentResponse,0,15,0,0,0,1,0,1,0,1
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.notification,NotificationService,7,0,0,0,2,0,2,0,2,0
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend,SecureBankingApplication,8,0,0,0,3,0,2,0,2,0
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.auth,AuthService,0,18,0,0,0,3,0,2,0,2
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.auth,AuthController,12,0,0,0,4,0,2,0,2,0
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.auth.dto,LoginResponse,0,12,0,0,0,1,0,1,0,1
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.auth.dto,LoginRequest,0,9,0,0,0,1,0,1,0,1
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.audit,AuditLogService,7,0,0,0,2,0,2,0,2,0
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.health,HealthController,10,0,0,0,2,0,2,0,2,0
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.transaction.dto,TransferRequest,0,18,0,0,0,1,0,1,0,1
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.transaction.dto,TransferResponse,0,15,0,0,0,1,0,1,0,1
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.account,AccountService,0,22,0,0,0,3,0,2,0,2
+Secure Mobile Banking & Instant Transaction Monitoring System,com.bank.secure.backend.account,AccountController,12,0,0,0,4,0,2,0,2,0

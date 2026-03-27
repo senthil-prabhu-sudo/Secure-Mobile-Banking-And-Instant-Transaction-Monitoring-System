@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TransactionMonitoringService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Secure Mobile Banking &amp; Instant Transaction Monitoring System</a> &gt; <a href="index.source.html" class="el_package">com.bank.secure.backend.monitoring</a> &gt; <span class="el_source">TransactionMonitoringService.java</span></div><h1>TransactionMonitoringService.java</h1><pre class="source lang-java linenums">package com.bank.secure.backend.monitoring;
+
+import com.bank.secure.backend.monitoring.dto.RiskAssessmentResponse;
+import org.springframework.stereotype.Service;
+
+import java.math.BigDecimal;
+
+@Service
+<span class="fc" id="L9">public class TransactionMonitoringService {</span>
+
+    public RiskAssessmentResponse assess(String transactionId, BigDecimal amount, String channel) {
+<span class="fc bfc" id="L12" title="All 2 branches covered.">        int score = amount.compareTo(new BigDecimal(&quot;5000&quot;)) &gt; 0 ? 82 : 24;</span>
+<span class="fc bfc" id="L13" title="All 2 branches covered.">        if (&quot;INTERNATIONAL&quot;.equalsIgnoreCase(channel)) {</span>
+<span class="fc" id="L14">            score = Math.min(100, score + 10);</span>
+        }
+
+<span class="pc bpc" id="L17" title="1 of 4 branches missed.">        String level = score &gt;= 80 ? &quot;HIGH&quot; : (score &gt;= 50 ? &quot;MEDIUM&quot; : &quot;LOW&quot;);</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        boolean manualReview = score &gt;= 80;</span>
+
+<span class="fc" id="L20">        return new RiskAssessmentResponse(transactionId, score, level, manualReview);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.14.202510111229</span></div></body></html>
